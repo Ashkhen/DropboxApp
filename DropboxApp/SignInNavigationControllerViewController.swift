@@ -1,21 +1,19 @@
 //
-//  SettingsViewController.swift
+//  SignInNavigationControllerViewController.swift
 //  DropboxApp
 //
-//  Created by Ashkhen Sargsyan on 2/2/16.
+//  Created by Ashkhen Sargsyan on 2/4/16.
 //  Copyright © 2016 Ashkhen Sargsyan. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SignInNavigationControllerViewController: UINavigationController {
 
-    @IBOutlet weak var settingsScrollView: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        settingsScrollView.contentSize = CGSize(width: 320, height: 1200)
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,10 +21,6 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func onButtonTap(sender: AnyObject) {
-        let nc = self.storyboard?.instantiateViewControllerWithIdentifier("SignInRootController")
-        self.navigationController?.pushViewController(nc!, animated: true)
-    }
 
     /*
     // MARK: - Navigation

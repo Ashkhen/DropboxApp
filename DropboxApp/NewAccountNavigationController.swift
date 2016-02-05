@@ -12,9 +12,6 @@ class NewAccountNavigationController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        performSegueWithIdentifier("segueToNewAccounts", sender: nil)
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +21,16 @@ class NewAccountNavigationController: UIViewController {
     }
     
     
+    @IBAction func onSignupTap(sender: AnyObject) {
+        let nc = self.storyboard?.instantiateViewControllerWithIdentifier("signupNav")
+        self.navigationController?.pushViewController(nc!, animated: true)
+    }
     
+    
+    @IBAction func onSigninTap(sender: AnyObject) {
+        let nc = self.storyboard?.instantiateViewControllerWithIdentifier("signinnav")
+        self.navigationController?.pushViewController(nc!, animated: true)
+    }
 
     /*
     // MARK: - Navigation

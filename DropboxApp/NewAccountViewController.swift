@@ -29,6 +29,11 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
         performSegueWithIdentifier("segueToNextScreen", sender: nil)
         return false
     }
+    
+    
+    @IBAction func onWelcomeTap(sender: AnyObject) {
+        navigationController?.popToRootViewControllerAnimated(true)
+    }
 
     /*
     // MARK: - Navigation
