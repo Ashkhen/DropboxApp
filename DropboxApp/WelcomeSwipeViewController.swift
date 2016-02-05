@@ -14,6 +14,7 @@ class WelcomeSwipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //welcomeScreens.frame = CGRect(x: 0, y: 0, width: 960, height: 568)
         welcomeScreens.contentSize = CGSize(width: 960, height: 568)
         
     }
@@ -23,8 +24,10 @@ class WelcomeSwipeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-  
 
+    @IBAction func onSignUpTap(sender: AnyObject) {
+        print("works")
+    }
     /*
     // MARK: - Navigation
 

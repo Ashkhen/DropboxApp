@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="cJ5-sF-jYP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -11,10 +11,10 @@
                 <viewController id="cJ5-sF-jYP" customClass="WelcomeSwipeViewController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d6K-IO-E9j">
                         <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="Fa2-Fw-hR2">
-                                <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" delaysContentTouches="NO" maximumZoomScale="5" id="Fa2-Fw-hR2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="Ezz-nh-kVw">
@@ -25,14 +25,32 @@
                                         <rect key="frame" x="320" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="m2L-dD-glR" appends="YES" id="3qg-fJ-FXx"/>
-                                        </connections>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome3" id="2lv-Rs-l5E">
-                                        <rect key="frame" x="641" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" id="l58-rg-upO">
+                                        <rect key="frame" x="640" y="0.0" width="0.0" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome3" id="bdk-NV-fWw">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wFE-ow-x64">
+                                                <rect key="frame" x="21" y="378" width="279" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="text test">
+                                                    <color key="titleColor" red="0.91755289159999998" green="0.24119913579999999" blue="0.16684192419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" red="0.45757774870000001" green="0.033077363839999999" blue="0.5333762916" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSignUpTap:" destination="cJ5-sF-jYP" eventType="touchUpInside" id="oTQ-aX-kpw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -45,11 +63,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqU-qn-M6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="m2L-dD-glR">
-                    <connections>
-                        <action selector="onSwipe:" destination="cJ5-sF-jYP" id="hpc-Jc-Fdm"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="248" y="-279"/>
         </scene>
@@ -71,7 +84,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="FqU-lJ-QTf" kind="modal" id="HTD-uS-KKC"/>
+                                    <segue destination="FqU-lJ-QTf" kind="modal" animates="NO" id="HTD-uS-KKC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="366"/>
+            <point key="canvasLocation" x="196" y="541"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JkS-Oy-DHl">
@@ -99,7 +112,7 @@
                                 <rect key="frame" x="5" y="52" width="315" height="516"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="VB2-T4-elw" kind="modal" id="DHv-Gx-4xo"/>
+                                    <segue destination="VB2-T4-elw" kind="modal" animates="NO" id="DHv-Gx-4xo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQ3-ju-qSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591" y="366"/>
+            <point key="canvasLocation" x="591" y="518"/>
         </scene>
         <!--New Account Navigation Controller-->
         <scene sceneID="4j6-sd-oDf">
@@ -146,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnM-c5-hvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="366"/>
+            <point key="canvasLocation" x="984" y="470"/>
         </scene>
         <!--SignInRootViewController-->
         <scene sceneID="E4p-bh-jUH">
@@ -656,12 +669,37 @@
                                     <segue destination="cjx-0G-DYo" kind="push" identifier="segueToNextScreen" id="LQI-C4-e0j"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="DCp-Bw-0oM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="DCp-Bw-0oM">
                                 <rect key="frame" x="115" y="86" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="q7n-qr-xQa">
+                                <rect key="frame" x="115" y="129" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="hRb-nz-k05">
+                                <rect key="frame" x="115" y="175" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="mRB-V7-dWn">
+                                <rect key="frame" x="115" y="213" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <segue destination="hYq-IS-f3r" kind="push" identifier="GoToTerms" id="Qwd-Ys-suD"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="54U-zo-2fW">
+                                <rect key="frame" x="10" y="257" width="301" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -669,7 +707,11 @@
                         <barButtonItem key="backBarButtonItem" title="Welcome" id="naq-MS-MO8"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="emailTextField" destination="hRb-nz-k05" id="YAh-RS-SYd"/>
                         <outlet property="firstNameTextField" destination="DCp-Bw-0oM" id="sfx-yN-Cpf"/>
+                        <outlet property="imageLabel" destination="54U-zo-2fW" id="tdF-Zz-1du"/>
+                        <outlet property="lastNameTextField" destination="q7n-qr-xQa" id="6bj-qd-Vyz"/>
+                        <outlet property="passwordTextField" destination="mRB-V7-dWn" id="Ztd-km-th0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sqy-xs-3P5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -881,7 +923,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JP3-5X-Rcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2381" y="3391"/>
+            <point key="canvasLocation" x="2385" y="3121"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="49l-Ey-agR">
@@ -1053,5 +1095,6 @@
         <segue reference="v6z-6U-j2r"/>
         <segue reference="FFC-RE-EFr"/>
         <segue reference="H4p-sX-U56"/>
+        <segue reference="Qwd-Ys-suD"/>
     </inferredMetricsTieBreakers>
 </document>
