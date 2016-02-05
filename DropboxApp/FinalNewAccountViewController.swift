@@ -22,6 +22,9 @@ class FinalNewAccountViewController: UIViewController {
     }
     
 
+    @IBAction func onWelcomeTap(sender: AnyObject) {
+        navigationController?.popToRootViewControllerAnimated(true)
+    }
     /*
     // MARK: - Navigation
 

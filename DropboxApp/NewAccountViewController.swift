@@ -35,11 +35,6 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    //func passwordFieldShouldReturn(textField: UITextField) -> Bool {
-      //  self.view.endEditing(true)
-        //        //return true
-    //}
-    
     
     @IBAction func onWelcomeTap(sender: AnyObject) {
         navigationController?.popToRootViewControllerAnimated(true)
@@ -49,17 +44,20 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
         
         if textField == passwordTextField {
             if passwordTextField.text!.characters.count == 1 {
-                var weakPasswordImage = UIImage(named: "signup_1")
-                imageLabel.setImage(weakPasswordImage)
+                let weakPasswordImage = UIImage(named: "signup_1")
+                imageLabel.image = weakPasswordImage
             }
             else if passwordTextField.text!.characters.count == 7 {
-                var image : UIImage = imageLabel(named: "signup_2")!
+                let goodPasswordImage = UIImage(named: "signup_2")
+                imageLabel.image = goodPasswordImage
             }
             else if passwordTextField.text!.characters.count == 9 {
-                var image: UIImage = UIImage(named: "signup_3")!
+                let sosoPasswordImage = UIImage(named: "signup_3")
+                imageLabel.image = sosoPasswordImage
             }
             else if passwordTextField.text!.characters.count == 15 {
-                var image: UIImage = UIImage(named: "signup_4")!
+                let strongPasswordImage = UIImage(named: "signup_4")
+                imageLabel.image = strongPasswordImage
             }
         }
         return true
