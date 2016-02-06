@@ -26,31 +26,24 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <gestureRecognizers/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" id="l58-rg-upO">
-                                        <rect key="frame" x="640" y="0.0" width="0.0" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome3" id="bdk-NV-fWw">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wFE-ow-x64">
-                                                <rect key="frame" x="21" y="378" width="279" height="52"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="text test">
-                                                    <color key="titleColor" red="0.91755289159999998" green="0.24119913579999999" blue="0.16684192419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <state key="highlighted">
-                                                    <color key="titleColor" red="0.45757774870000001" green="0.033077363839999999" blue="0.5333762916" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="onSignUpTap:" destination="cJ5-sF-jYP" eventType="touchUpInside" id="oTQ-aX-kpw"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome3" id="bdk-NV-fWw">
+                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fEG-ag-403">
+                                        <rect key="frame" x="682" y="388" width="242" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="LJE-7P-YUL" kind="modal" id="Bi8-6w-PHj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l4L-Dv-FQd">
+                                        <rect key="frame" x="728" y="462" width="136" height="53"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="a4z-hf-B13" kind="modal" id="dEt-d9-DaX"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -82,7 +75,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bgm-58-L8S">
                                 <rect key="frame" x="0.0" y="0.0" width="315" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="FqU-lJ-QTf" kind="modal" animates="NO" id="HTD-uS-KKC"/>
                                 </connections>
@@ -945,8 +937,9 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H4p-sX-U56"/>
-        <segue reference="FFC-RE-EFr"/>
         <segue reference="v6z-6U-j2r"/>
+        <segue reference="dEt-d9-DaX"/>
+        <segue reference="Bi8-6w-PHj"/>
+        <segue reference="H4p-sX-U56"/>
     </inferredMetricsTieBreakers>
 </document>

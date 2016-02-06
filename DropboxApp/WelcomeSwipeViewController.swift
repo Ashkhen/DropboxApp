@@ -25,9 +25,6 @@ class WelcomeSwipeViewController: UIViewController {
     }
 
 
-    @IBAction func onSignUpTap(sender: AnyObject) {
-        print("works")
-    }
     /*
     // MARK: - Navigation
 
