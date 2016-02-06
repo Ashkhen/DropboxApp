@@ -15,6 +15,7 @@
 
 Approximate time spent: **15 hours**
 
+![ScreenShot](https://raw.githubusercontent.com/Ashkhen/DropboxApp/e5228e8ad693e7fd36d2e259dc23d01cd5a652bd/DropboxWalkthrough.gif)
 
 ## License
 
