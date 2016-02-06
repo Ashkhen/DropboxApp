@@ -16,7 +16,7 @@ class PhotosScrollViewController: UIViewController {
         super.viewDidLoad()
 
         photoScrollView.contentSize = CGSize(width: 320, height: 1000)
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
