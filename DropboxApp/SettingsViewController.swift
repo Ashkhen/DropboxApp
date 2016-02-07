@@ -15,15 +15,10 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        settingsScrollView.contentSize = CGSize(width: 320, height: 1200)
+        settingsScrollView.contentSize = CGSize(width: 320, height: 722)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    @IBAction func onButtonTap(sender: AnyObject) {
-        let nc = self.storyboard?.instantiateViewControllerWithIdentifier("SignInRootController")
-        self.navigationController?.pushViewController(nc!, animated: true)
     }
 }

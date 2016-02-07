@@ -126,7 +126,6 @@
 				5AF849D51C6315E4004DE3E4 /* CreateAccountRootViewController.swift */,
 				5A97061E1C66A4530089AE97 /* FavoriteDetailViewController.swift */,
 				5AF849F11C647AE0004DE3E4 /* FinalNewAccountViewController.swift */,
-				5ADBAF5F1C5EB354001FCB13 /* Main.storyboard */,
 				5ADBAF8D1C61DA3E001FCB13 /* NewAccountNavigationController.swift */,
 				5ADBAF8B1C61CB93001FCB13 /* NewAccountViewController.swift */,
 				5AF849EF1C647837004DE3E4 /* PhotosScrollViewController.swift */,
@@ -137,6 +136,7 @@
 				5ADBAF5D1C5EB354001FCB13 /* ViewController.swift */,
 				5AF849F31C647D52004DE3E4 /* WelcomeSwipeViewController.swift */,
 				5ADBAF621C5EB354001FCB13 /* Assets.xcassets */,
+				5ADBAF5F1C5EB354001FCB13 /* Main.storyboard */,
 				5ADBAF641C5EB354001FCB13 /* LaunchScreen.storyboard */,
 				5ADBAF671C5EB354001FCB13 /* Info.plist */,
 			);

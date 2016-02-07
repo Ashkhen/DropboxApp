@@ -71,7 +71,6 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
             break
         case passwordTextField:
             passwordTextField.endEditing(false)
-            performSegueWithIdentifier("GoToTerms", sender: nil)
             break
         default:
             firstNameTextField.becomeFirstResponder()
