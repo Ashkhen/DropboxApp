@@ -1,7 +1,6 @@
 ## Dropbox App
 
 - Implemented the flow between sceens for the dropbox app. 
-- User can tap through the 3 welcome screens.
 - User can follow the create user flow.
 - On the create user form, the user can tap the back button to go to the page where they can sign in or create an account.
 - Before creating the account, user can choose to read the terms of service.
@@ -10,12 +9,13 @@
 - User can follow the sign in flow.
 - User can tap the area for "Having trouble signing in?"
 - User can log out from the Settings screen.
-- Bonus: Swipe through the 3 welcome screens.
-- Bonus: UITextfields for forms, password field has a function to check character length and assign appropriate password image to the image view. UITextFields 
+- Optional: Swipe through the 3 welcome screens.
+- Optional: UITextfields for forms, password field has a function to check character length and assign appropriate password image to the image view. UITextFields 
+- Optional: Favorite detail view and favoriting button toggle.
 
-Approximate time spent: **15 hours**
+Approximate time spent: **20 hours**
 
-![ScreenShot](https://raw.githubusercontent.com/Ashkhen/DropboxApp/e5228e8ad693e7fd36d2e259dc23d01cd5a652bd/DropboxWalkthrough.gif)
+![ScreenShot](https://raw.githubusercontent.com/Ashkhen/DropboxApp/master/DropboxWalkthrough.gif)
 
 ## License
 
