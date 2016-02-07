@@ -19,6 +19,7 @@ class TermsViewController: UIViewController {
     }
     
     @IBAction func onDoneTap(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: nil)
+       
     }
 }

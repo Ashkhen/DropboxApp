@@ -45,13 +45,13 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
             if passwordTextField.text!.characters.count == 1 {
                 imageLabel.image = UIImage(named: "signup_1")
             }
-            else if passwordTextField.text!.characters.count == 7 {
+            else if passwordTextField.text!.characters.count == 3 {
                 imageLabel.image = UIImage(named: "signup_2")
             }
-            else if passwordTextField.text!.characters.count == 9 {
+            else if passwordTextField.text!.characters.count == 5 {
                 imageLabel.image = UIImage(named: "signup_3")
             }
-            else if passwordTextField.text!.characters.count == 15 {
+            else if passwordTextField.text!.characters.count == 7 {
                 imageLabel.image = UIImage(named: "signup_4")
             }
         }
