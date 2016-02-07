@@ -35,29 +35,32 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func onCreateTap(sender: AnyObject) {
+        pushToNextScreen()
+    }
+   
     @IBAction func onWelcomeTap(sender: AnyObject) {
         navigationController?.popToRootViewControllerAnimated(true)
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        
-        if textField == passwordTextField {
-            if passwordTextField.text!.characters.count == 1 {
-                imageLabel.image = UIImage(named: "signup_1")
-            }
-            else if passwordTextField.text!.characters.count == 3 {
-                imageLabel.image = UIImage(named: "signup_2")
-            }
-            else if passwordTextField.text!.characters.count == 5 {
-                imageLabel.image = UIImage(named: "signup_3")
-            }
-            else if passwordTextField.text!.characters.count == 7 {
-                imageLabel.image = UIImage(named: "signup_4")
-            }
+    @IBAction func onPasswordEditingChanged(sender: AnyObject) {
+        if passwordTextField.text!.characters.count == 0 {
+            imageLabel.image = nil
         }
-        return true
+        else if passwordTextField.text!.characters.count == 1 {
+            imageLabel.image = UIImage(named: "signup_1")
+        }
+        else if passwordTextField.text!.characters.count == 3 {
+            imageLabel.image = UIImage(named: "signup_2")
+        }
+        else if passwordTextField.text!.characters.count == 5 {
+            imageLabel.image = UIImage(named: "signup_3")
+        }
+        else if passwordTextField.text!.characters.count >= 7 {
+            imageLabel.image = UIImage(named: "signup_4")
+        }
     }
-
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         switch textField {
         case firstNameTextField:
@@ -71,11 +74,17 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
             break
         case passwordTextField:
             passwordTextField.endEditing(false)
+            pushToNextScreen()
             break
         default:
             firstNameTextField.becomeFirstResponder()
         }
         
         return true
+    }
+    
+    func pushToNextScreen() {
+        let vc = storyboard?.instantiateViewControllerWithIdentifier("finalNewAcount")
+        presentViewController(vc!, animated: true, completion: nil)
     }
 }

@@ -413,18 +413,14 @@
             </objects>
             <point key="canvasLocation" x="4811" y="1905"/>
         </scene>
-        <!--New Account-->
+        <!--Final New Account View Controller-->
         <scene sceneID="VAC-dr-Zkw">
             <objects>
-                <viewController id="hYq-IS-f3r" customClass="FinalNewAccountViewController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="finalNewAcount" id="hYq-IS-f3r" customClass="FinalNewAccountViewController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v7q-Bl-yY5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create5" id="j9E-hL-fOv">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BTH-H3-85w">
                                 <rect key="frame" x="20" y="525" width="275" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -440,16 +436,13 @@
                                     <segue destination="5oM-4M-hTt" kind="modal" id="3q8-Vo-b1z"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create5" id="j9E-hL-fOv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Account" id="77R-Qj-5bb">
-                        <barButtonItem key="leftBarButtonItem" title="Welcome" id="jYN-Y6-5TH">
-                            <connections>
-                                <action selector="onWelcomeTap:" destination="hYq-IS-f3r" id="IT3-8G-Tyk"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4m-7I-c3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -568,12 +561,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="54U-zo-2fW">
-                                <rect key="frame" x="10" y="257" width="301" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Secret" textAlignment="natural" minimumFontSize="17" id="mRB-V7-dWn">
                                 <rect key="frame" x="115" y="219" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -581,14 +570,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
-                                    <segue destination="hYq-IS-f3r" kind="push" identifier="GoToTerms" id="Qwd-Ys-suD"/>
+                                    <action selector="onPasswordEditingChanged:" destination="ONH-DT-5L7" eventType="editingChanged" id="Yrs-3y-0Qr"/>
+                                    <action selector="onPasswordEditingChanged:" destination="ONH-DT-5L7" eventType="editingDidEnd" id="pQd-2M-tcs"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="54U-zo-2fW">
+                                <rect key="frame" x="10" y="262" width="301" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Account" id="61e-Jz-yw6">
-                        <barButtonItem key="backBarButtonItem" title="Welcome" id="naq-MS-MO8"/>
+                        <barButtonItem key="leftBarButtonItem" title="Welcome" id="naq-MS-MO8">
+                            <connections>
+                                <action selector="onWelcomeTap:" destination="ONH-DT-5L7" id="yim-53-xh8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Create" id="eBF-8j-xIs">
+                            <connections>
+                                <action selector="onCreateTap:" destination="ONH-DT-5L7" id="Fnl-eG-Qud"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="hRb-nz-k05" id="YAh-RS-SYd"/>
@@ -600,7 +603,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sqy-xs-3P5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2326" y="366"/>
+            <point key="canvasLocation" x="2302" y="366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1DY-O0-oH2">
@@ -746,7 +749,7 @@
             <objects>
                 <viewController id="vYo-ba-FDA" customClass="PhotosScrollViewController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsU-To-WOB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="p0t-po-8KC">
@@ -754,7 +757,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_photos" id="0E6-eJ-dMo">
-                                        <rect key="frame" x="4" y="-4" width="320" height="725"/>
+                                        <rect key="frame" x="0.0" y="-66" width="320" height="725"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -764,15 +767,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Photos" image="photos_tab" id="d3n-gJ-gBq"/>
                     <navigationItem key="navigationItem" title="Photos" id="kC7-tp-zFa"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="1000"/>
                     <connections>
                         <outlet property="photoScrollView" destination="p0t-po-8KC" id="5A3-H7-QPI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JP3-5X-Rcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2385" y="3121"/>
+            <point key="canvasLocation" x="2385" y="2905"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="49l-Ey-agR">
