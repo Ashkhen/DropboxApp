@@ -16,30 +16,15 @@ class NewAccountNavigationController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-       
     }
-    
     
     @IBAction func onSignupTap(sender: AnyObject) {
         let nc = self.storyboard?.instantiateViewControllerWithIdentifier("signupNav")
         self.navigationController?.pushViewController(nc!, animated: true)
     }
     
-    
     @IBAction func onSigninTap(sender: AnyObject) {
         let nc = self.storyboard?.instantiateViewControllerWithIdentifier("signinnav")
         self.navigationController?.pushViewController(nc!, animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

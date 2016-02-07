@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A97061F1C66A4530089AE97 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A97061E1C66A4530089AE97 /* FavoriteDetailViewController.swift */; };
 		5ADBAF5C1C5EB354001FCB13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBAF5B1C5EB354001FCB13 /* AppDelegate.swift */; };
 		5ADBAF5E1C5EB354001FCB13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBAF5D1C5EB354001FCB13 /* ViewController.swift */; };
 		5ADBAF611C5EB354001FCB13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ADBAF5F1C5EB354001FCB13 /* Main.storyboard */; };
@@ -17,16 +18,11 @@
 		5ADBAF8A1C61B439001FCB13 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBAF891C61B439001FCB13 /* SettingsViewController.swift */; };
 		5ADBAF8C1C61CB93001FCB13 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBAF8B1C61CB93001FCB13 /* NewAccountViewController.swift */; };
 		5ADBAF8E1C61DA3E001FCB13 /* NewAccountNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBAF8D1C61DA3E001FCB13 /* NewAccountNavigationController.swift */; };
-		5ADBAF901C62E7A9001FCB13 /* SignupOrSigninNagivationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBAF8F1C62E7A9001FCB13 /* SignupOrSigninNagivationController.swift */; };
 		5AF849D61C6315E4004DE3E4 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849D51C6315E4004DE3E4 /* CreateAccountRootViewController.swift */; };
 		5AF849E01C6453E5004DE3E4 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849DF1C6453E5004DE3E4 /* TermsViewController.swift */; };
 		5AF849E21C645A0E004DE3E4 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849E11C645A0E004DE3E4 /* SignInRootViewController.swift */; };
-		5AF849E41C645B08004DE3E4 /* SettingsSignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849E31C645B08004DE3E4 /* SettingsSignedInViewController.swift */; };
 		5AF849E61C6461A8004DE3E4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849E51C6461A8004DE3E4 /* SignInViewController.swift */; };
-		5AF849E81C6463CC004DE3E4 /* SignInNavigationControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849E71C6463CC004DE3E4 /* SignInNavigationControllerViewController.swift */; };
 		5AF849EA1C646984004DE3E4 /* CancelPasswordHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849E91C646984004DE3E4 /* CancelPasswordHelpViewController.swift */; };
-		5AF849EC1C6469CA004DE3E4 /* DropboxSigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849EB1C6469CA004DE3E4 /* DropboxSigninViewController.swift */; };
-		5AF849EE1C646AAD004DE3E4 /* TroubleSigningInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849ED1C646AAD004DE3E4 /* TroubleSigningInViewController.swift */; };
 		5AF849F01C647837004DE3E4 /* PhotosScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849EF1C647837004DE3E4 /* PhotosScrollViewController.swift */; };
 		5AF849F21C647AE0004DE3E4 /* FinalNewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849F11C647AE0004DE3E4 /* FinalNewAccountViewController.swift */; };
 		5AF849F41C647D52004DE3E4 /* WelcomeSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF849F31C647D52004DE3E4 /* WelcomeSwipeViewController.swift */; };
@@ -50,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A97061E1C66A4530089AE97 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		5ADBAF581C5EB353001FCB13 /* DropboxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropboxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADBAF5B1C5EB354001FCB13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ADBAF5D1C5EB354001FCB13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,16 +63,11 @@
 		5ADBAF891C61B439001FCB13 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5ADBAF8B1C61CB93001FCB13 /* NewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		5ADBAF8D1C61DA3E001FCB13 /* NewAccountNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewAccountNavigationController.swift; sourceTree = "<group>"; };
-		5ADBAF8F1C62E7A9001FCB13 /* SignupOrSigninNagivationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupOrSigninNagivationController.swift; sourceTree = "<group>"; };
 		5AF849D51C6315E4004DE3E4 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
 		5AF849DF1C6453E5004DE3E4 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		5AF849E11C645A0E004DE3E4 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
-		5AF849E31C645B08004DE3E4 /* SettingsSignedInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSignedInViewController.swift; sourceTree = "<group>"; };
 		5AF849E51C6461A8004DE3E4 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		5AF849E71C6463CC004DE3E4 /* SignInNavigationControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInNavigationControllerViewController.swift; sourceTree = "<group>"; };
 		5AF849E91C646984004DE3E4 /* CancelPasswordHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPasswordHelpViewController.swift; sourceTree = "<group>"; };
-		5AF849EB1C6469CA004DE3E4 /* DropboxSigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxSigninViewController.swift; sourceTree = "<group>"; };
-		5AF849ED1C646AAD004DE3E4 /* TroubleSigningInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TroubleSigningInViewController.swift; sourceTree = "<group>"; };
 		5AF849EF1C647837004DE3E4 /* PhotosScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosScrollViewController.swift; sourceTree = "<group>"; };
 		5AF849F11C647AE0004DE3E4 /* FinalNewAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalNewAccountViewController.swift; sourceTree = "<group>"; };
 		5AF849F31C647D52004DE3E4 /* WelcomeSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeSwipeViewController.swift; sourceTree = "<group>"; };
@@ -130,27 +122,23 @@
 			isa = PBXGroup;
 			children = (
 				5ADBAF5B1C5EB354001FCB13 /* AppDelegate.swift */,
-				5ADBAF5D1C5EB354001FCB13 /* ViewController.swift */,
+				5AF849E91C646984004DE3E4 /* CancelPasswordHelpViewController.swift */,
+				5AF849D51C6315E4004DE3E4 /* CreateAccountRootViewController.swift */,
+				5A97061E1C66A4530089AE97 /* FavoriteDetailViewController.swift */,
+				5AF849F11C647AE0004DE3E4 /* FinalNewAccountViewController.swift */,
 				5ADBAF5F1C5EB354001FCB13 /* Main.storyboard */,
 				5ADBAF8D1C61DA3E001FCB13 /* NewAccountNavigationController.swift */,
 				5ADBAF8B1C61CB93001FCB13 /* NewAccountViewController.swift */,
+				5AF849EF1C647837004DE3E4 /* PhotosScrollViewController.swift */,
 				5ADBAF891C61B439001FCB13 /* SettingsViewController.swift */,
-				5ADBAF8F1C62E7A9001FCB13 /* SignupOrSigninNagivationController.swift */,
-				5AF849D51C6315E4004DE3E4 /* CreateAccountRootViewController.swift */,
+				5AF849E51C6461A8004DE3E4 /* SignInViewController.swift */,
+				5AF849E11C645A0E004DE3E4 /* SignInRootViewController.swift */,
+				5AF849DF1C6453E5004DE3E4 /* TermsViewController.swift */,
+				5ADBAF5D1C5EB354001FCB13 /* ViewController.swift */,
+				5AF849F31C647D52004DE3E4 /* WelcomeSwipeViewController.swift */,
 				5ADBAF621C5EB354001FCB13 /* Assets.xcassets */,
 				5ADBAF641C5EB354001FCB13 /* LaunchScreen.storyboard */,
 				5ADBAF671C5EB354001FCB13 /* Info.plist */,
-				5AF849DF1C6453E5004DE3E4 /* TermsViewController.swift */,
-				5AF849E11C645A0E004DE3E4 /* SignInRootViewController.swift */,
-				5AF849E31C645B08004DE3E4 /* SettingsSignedInViewController.swift */,
-				5AF849E51C6461A8004DE3E4 /* SignInViewController.swift */,
-				5AF849E71C6463CC004DE3E4 /* SignInNavigationControllerViewController.swift */,
-				5AF849E91C646984004DE3E4 /* CancelPasswordHelpViewController.swift */,
-				5AF849EB1C6469CA004DE3E4 /* DropboxSigninViewController.swift */,
-				5AF849ED1C646AAD004DE3E4 /* TroubleSigningInViewController.swift */,
-				5AF849EF1C647837004DE3E4 /* PhotosScrollViewController.swift */,
-				5AF849F11C647AE0004DE3E4 /* FinalNewAccountViewController.swift */,
-				5AF849F31C647D52004DE3E4 /* WelcomeSwipeViewController.swift */,
 			);
 			path = DropboxApp;
 			sourceTree = "<group>";
@@ -307,22 +295,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF849E41C645B08004DE3E4 /* SettingsSignedInViewController.swift in Sources */,
 				5AF849D61C6315E4004DE3E4 /* CreateAccountRootViewController.swift in Sources */,
-				5AF849E81C6463CC004DE3E4 /* SignInNavigationControllerViewController.swift in Sources */,
 				5ADBAF5E1C5EB354001FCB13 /* ViewController.swift in Sources */,
+				5A97061F1C66A4530089AE97 /* FavoriteDetailViewController.swift in Sources */,
 				5ADBAF5C1C5EB354001FCB13 /* AppDelegate.swift in Sources */,
-				5AF849EC1C6469CA004DE3E4 /* DropboxSigninViewController.swift in Sources */,
 				5AF849F41C647D52004DE3E4 /* WelcomeSwipeViewController.swift in Sources */,
 				5AF849EA1C646984004DE3E4 /* CancelPasswordHelpViewController.swift in Sources */,
-				5ADBAF901C62E7A9001FCB13 /* SignupOrSigninNagivationController.swift in Sources */,
 				5AF849E61C6461A8004DE3E4 /* SignInViewController.swift in Sources */,
 				5ADBAF8A1C61B439001FCB13 /* SettingsViewController.swift in Sources */,
 				5ADBAF8E1C61DA3E001FCB13 /* NewAccountNavigationController.swift in Sources */,
 				5AF849E21C645A0E004DE3E4 /* SignInRootViewController.swift in Sources */,
 				5ADBAF8C1C61CB93001FCB13 /* NewAccountViewController.swift in Sources */,
 				5AF849F01C647837004DE3E4 /* PhotosScrollViewController.swift in Sources */,
-				5AF849EE1C646AAD004DE3E4 /* TroubleSigningInViewController.swift in Sources */,
 				5AF849E01C6453E5004DE3E4 /* TermsViewController.swift in Sources */,
 				5AF849F21C647AE0004DE3E4 /* FinalNewAccountViewController.swift in Sources */,
 			);

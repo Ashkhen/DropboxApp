@@ -1,15 +1,15 @@
 //
-//  TermsViewController.swift
+//  FavoriteDetailViewController.swift
 //  DropboxApp
 //
-//  Created by Ashkhen Sargsyan on 2/4/16.
+//  Created by Ashkhen Sargsyan on 2/6/16.
 //  Copyright © 2016 Ashkhen Sargsyan. All rights reserved.
 //
 
 import UIKit
 
-class TermsViewController: UIViewController {
-
+class FavoriteDetailViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,6 +19,10 @@ class TermsViewController: UIViewController {
     }
     
     @IBAction func onDoneTap(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+       self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func onButton(sender: UIButton) {
+        sender.selected = !sender.selected
     }
 }

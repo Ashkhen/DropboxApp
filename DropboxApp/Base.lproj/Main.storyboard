@@ -191,7 +191,7 @@
         <!--Dropbox-->
         <scene sceneID="MTR-TX-ZC3">
             <objects>
-                <viewController id="A1k-IW-a44" customClass="DropboxSigninViewController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="A1k-IW-a44" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zgO-Bl-Gib">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,7 +230,7 @@
         <!--Dropbox-->
         <scene sceneID="HCB-HK-LsE">
             <objects>
-                <viewController id="Udd-xA-Fsk" customClass="TroubleSigningInViewController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Udd-xA-Fsk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WpL-z7-RP6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -483,10 +483,10 @@
             </objects>
             <point key="canvasLocation" x="3184" y="366"/>
         </scene>
-        <!--Sign In Navigation Controller View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="D6f-K0-2Aw">
             <objects>
-                <navigationController storyboardIdentifier="signinnav" automaticallyAdjustsScrollViewInsets="NO" id="a4z-hf-B13" customClass="SignInNavigationControllerViewController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="signinnav" automaticallyAdjustsScrollViewInsets="NO" id="a4z-hf-B13" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="BQ8-Jv-eMT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nz1-mq-1LC">
@@ -602,10 +602,10 @@
             </objects>
             <point key="canvasLocation" x="2326" y="366"/>
         </scene>
-        <!--Signup Or Signin Nagivation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="1DY-O0-oH2">
             <objects>
-                <navigationController storyboardIdentifier="signupNav" automaticallyAdjustsScrollViewInsets="NO" id="LJE-7P-YUL" customClass="SignupOrSigninNagivationController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="signupNav" automaticallyAdjustsScrollViewInsets="NO" id="LJE-7P-YUL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Maf-m6-NK1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -786,6 +786,13 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="457"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aIW-na-gOa">
+                                <rect key="frame" x="0.0" y="64" width="320" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="S8t-Lg-YS6" kind="modal" id="2VA-Jg-nzB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -795,6 +802,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SR-2n-ekk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3167" y="2905"/>
+        </scene>
+        <!--Favorite Detail View Controller-->
+        <scene sceneID="NqQ-u6-Hbk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s18-gi-Zpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="S8t-Lg-YS6" customClass="FavoriteDetailViewController" customModule="DropboxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jNg-Mg-jlk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="Vlo-IW-cgZ">
+                                <rect key="frame" x="0.0" y="27" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Getting Started.pdf" id="JMa-Ez-Ce9">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZmD-bN-rjn">
+                                            <connections>
+                                                <action selector="onDoneTap:" destination="S8t-Lg-YS6" id="of5-Tc-Xjz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XuL-sJ-Eyt">
+                                <rect key="frame" x="116" y="528" width="89" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="favorite_btn"/>
+                                <state key="selected" image="favorited_btn"/>
+                                <connections>
+                                    <action selector="onButton:" destination="S8t-Lg-YS6" eventType="touchUpInside" id="4qE-Sk-qgw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GettingStartedDetail" id="5Jz-q0-bO4">
+                                <rect key="frame" x="0.0" y="71" width="320" height="449"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3167" y="3647"/>
         </scene>
         <!--Item-->
         <scene sceneID="UIM-3n-ahf">
@@ -914,6 +965,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="GettingStartedDetail" width="476" height="568"/>
         <image name="create5" width="320" height="568"/>
         <image name="create_account" width="320" height="568"/>
         <image name="empty_favorites" width="320" height="454"/>
@@ -921,7 +973,9 @@
         <image name="empty_photos" width="320" height="454"/>
         <image name="existing_files" width="320" height="454"/>
         <image name="existing_photos" width="320" height="725"/>
+        <image name="favorite_btn" width="26" height="25"/>
         <image name="favorited" width="320" height="417"/>
+        <image name="favorited_btn" width="26" height="25"/>
         <image name="favorites_tab" width="30" height="30"/>
         <image name="files_tab" width="30" height="30"/>
         <image name="logged_out" width="320" height="568"/>
@@ -937,9 +991,9 @@
         <image name="welcome3" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v6z-6U-j2r"/>
-        <segue reference="dEt-d9-DaX"/>
-        <segue reference="Bi8-6w-PHj"/>
-        <segue reference="H4p-sX-U56"/>
+        <segue reference="ptc-nM-C4k"/>
+        <segue reference="6qf-XJ-voa"/>
+        <segue reference="gxd-ph-2th"/>
+        <segue reference="dgV-G6-EoO"/>
     </inferredMetricsTieBreakers>
 </document>

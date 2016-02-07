@@ -24,6 +24,7 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
         self.lastNameTextField.delegate = self
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
+        
         firstNameTextField.returnKeyType = .Next
         lastNameTextField.returnKeyType = .Next
         emailTextField.returnKeyType = .Next
@@ -32,9 +33,7 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
     
     @IBAction func onWelcomeTap(sender: AnyObject) {
         navigationController?.popToRootViewControllerAnimated(true)
@@ -44,20 +43,16 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
         
         if textField == passwordTextField {
             if passwordTextField.text!.characters.count == 1 {
-                let weakPasswordImage = UIImage(named: "signup_1")
-                imageLabel.image = weakPasswordImage
+                imageLabel.image = UIImage(named: "signup_1")
             }
             else if passwordTextField.text!.characters.count == 7 {
-                let goodPasswordImage = UIImage(named: "signup_2")
-                imageLabel.image = goodPasswordImage
+                imageLabel.image = UIImage(named: "signup_2")
             }
             else if passwordTextField.text!.characters.count == 9 {
-                let sosoPasswordImage = UIImage(named: "signup_3")
-                imageLabel.image = sosoPasswordImage
+                imageLabel.image = UIImage(named: "signup_3")
             }
             else if passwordTextField.text!.characters.count == 15 {
-                let strongPasswordImage = UIImage(named: "signup_4")
-                imageLabel.image = strongPasswordImage
+                imageLabel.image = UIImage(named: "signup_4")
             }
         }
         return true
@@ -84,14 +79,4 @@ class NewAccountViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
