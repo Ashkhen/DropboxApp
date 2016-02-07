@@ -2,15 +2,17 @@
 
 - Implemented the flow between sceens for the dropbox app. 
 - User can follow the create user flow.
-- On the create user form, the user can tap the back button to go to the page where they can sign in or create an account.
-- Before creating the account, user can choose to read the terms of service.
-- After creating the account, user can view the placeholders for Files, Photos, and Favorites as well as the Settings screen.
+	- On the create user form, the user can tap the back button to go to the page where they can sign in or create an account.
+	- Before creating the account, user can choose to read the terms of service.
+	- After creating the account, user can view the placeholders for Files, Photos, and Favorites as well as the Settings screen.
 - User can log out from the Settings screen.
 - User can follow the sign in flow.
-- User can tap the area for "Having trouble signing in?"
-- User can log out from the Settings screen.
-- Optional: Swipe through the 3 welcome screens.
-- Optional: UITextfields for forms, password field has a function to check character length and assign appropriate password image to the image view. UITextFields 
+	- User can tap the area for "Having trouble signing in?"
+	- User can log out from the Settings screen.
+- Optional: Swipe through the 3 welcome screens instead of tapping.
+- Optional: UITextfields for forms.
+	- Password field has a function to check character length and assign appropriate password image to the image view. 
+	- Programically handle switching between fields and set return key on keyboard. 
 - Optional: Favorite detail view and favoriting button toggle.
 
 Approximate time spent: **20 hours**
